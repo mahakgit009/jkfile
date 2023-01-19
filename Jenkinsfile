@@ -4,7 +4,7 @@ pipeline{
 		}
 		
 		stages{
-		        stage ('install apache'){
+		        /*stage ('install apache'){
 				        steps{
 						    sh "yum install httpd -y"
 							
@@ -15,7 +15,7 @@ pipeline{
 						    sh "service httpd start"
 							
 						}
-				}
+				}*/
 				stage ('deploy index'){
 				        steps{
 						    sh "cp -r index.html /var/www/html"
